@@ -1,0 +1,15 @@
+contnum=0
+ver="true"
+try:
+   while ver:
+      numero=int(input("Usuario, ingrese un numero"))
+      if numero==0:
+         print("la cuenta ha terminado")
+         ver="false"
+      else:
+         contsum=contsum+numero
+   print("la suma dio: ", contsum)
+except ValueError:
+   print("❌ Error: ¡Debes escribir un NÚMERO, no letras!") 
+print("El programa continúa sin explotar.")
+

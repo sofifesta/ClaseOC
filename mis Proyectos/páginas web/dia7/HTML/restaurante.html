@@ -3,52 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parrilla "El Asador Flojo" - Menú</title>
-    
+    <title>Menú - Lo de Luigi</title>
+    <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
-    <header>
-        <h1>Instrucciones para usar youtube</h1>
-        <img src="https://ipm.edu.ar/assets/img/logo.png" alt="">
-    </header>
-<main>
-     <h1>Parrilla "El Asador Flojo"</h1>
-    <p><i>Atendido por sus propios dueños (cuando tienen ganas)</i></p>
-    <div >
-        <h2>Choripán Seco</h2>
-        <p>Un clásico argentino. Servido en pan del anteayer.</p>
-       <img src="https://elterritorio1.cdn.net.ar/252/elterritorio1/images/34/32/343264_683075baed2174850b255cb1137a43c33202362bd2f99062ba219d8e05d72c88/xl.jpg" width="300" height="250">
-         <p class="precio">$14.500</p>
-    </div>
+    <div class="menu-container">
+        <header class="menu-header">
+            <h1>Lo de Luigi</h1>
+            <p class="subtitle">Ristorante & Alta Cocina</p>
+            <hr class="divider">
+        </header>
 
-    <!-- Plato 2 -->
-    <div class="menu-item">
-        <h2>asado banderita ""</h2>
-        <p>Corte de carne misterioso. Ideal para ejercitar la mandíbula.</p>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh5tD6ErkdU_nJL9tiwmqd0nVRRXeFXD_stjHVm2rNTo2pqSSrKuyOEfI&s=10" width="300" height="250">
-        <p class="precio">$49.999</p>
-    </div>
+        <main>
+            <section class="menu-section">
+                <h2>Antipasti & Entradas</h2>
+                <ul class="dish-list">
+                    <li>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQekfTvrkU3cEIWKnTXnL9NYbZMfjUzJog80m9ej8zs5g&s=10" alt="Carpaccio de Ternera de Kobe" class="dish-img">
+                        <div class="dish-content">
+                            <div class="dish-info">
+                                <span class="dish-name">Carpaccio de Ternera de Kobe</span>
+                                <span class="dish-price">$24</span>
+                            </div>
+                            <p class="dish-desc">Láminas finas de ternera con lascas de Parmigiano Reggiano y aceite de trufa blanca.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9CAnKN-56YqT4c4AEPpdppiQoz5M2vioWB1huHdWbdA&s=10" alt="Ostras Rockefeller" class="dish-img">
+                        <div class="dish-content">
+                            <div class="dish-info">
+                                <span class="dish-name">Ostras Rockefeller</span>
+                                <span class="dish-price">$30</span>
+                            </div>
+                            <p class="dish-desc">Ostras horneadas con mantequilla, espinacas, hierbas y un toque de pernod.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkEMtdaoc3_O3DYL8gvXLJZQaUydMEKJMz7GS-Q9Q9qiprBDiz-JEpoHY&s=10" alt="Foie Gras Mi-Cuit" class="dish-img">
+                        <div class="dish-content">
+                            <div class="dish-info">
+                                <span class="dish-name">Foie Gras Mi-Cuit</span>
+                                <span class="dish-price">$35</span>
+                            </div>
+                            <p class="dish-desc">Servido con compota de higos y pan brioche tostado artesanal.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0B1mPubqko7OrzTIdZOLgUZxW2NT8A6t6ZF0ep2CD5w&s=10" alt="Tartar de Atún Rojo" class="dish-img">
+                        <div class="dish-content">
+                            <div class="dish-info">
+                                <span class="dish-name">Tartar de Atún Rojo Balfegó</span>
+                                <span class="dish-price">$28</span>
+                            </div>
+                            <p class="dish-desc">Atún marinado en soja, aguacate, sésamo y caviar de pez volador.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPM4P9nq5WoT2Wn8jq7XZF827DbipGxxGuW9V5BYwJZ6gTqyqGkx53ptJY&s=10" alt="Bisque de Langosta" class="dish-img">
+                        <div class="dish-content">
+                            <div class="dish-info">
+                                <span class="dish-name">Bisque de Langosta</span>
+                                <span class="dish-price">$22</span>
+                            </div>
+                            <p class="dish-desc">Crema sedosa de langosta al estragón con un toque de coñac XO.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
 
-    <!-- Plato 3 -->
-    <div class="menu-item">
-        <h2>Papas Fritas Aceitosas</h2>
-        <p>Bañadas en un aceite que ha visto pasar mejores épocas. Probablemente con moho y nos confundimos la sal con el azucar ¡CUIDADO!.</p>
-        <img src="https://i.redd.it/1cgktf57lqxf1.jpeg" width="300" height="250">
-        <p class="precio">$9.999</p>
+            <section class="menu-section">
+                <h2>Platos Principales</h2>
+                <ul class="dish-list">
+                    <li>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoYMG9VbBfIoOoAuA3lohEIzKdQDgIQgQ3mbn7Ml-fxLGjaYjAc8L5J2U&s=10" alt="Filet Mignon" class="dish-img">
+                        <div class="dish-content">
+                            <div class="dish-info">
+                                <span class="dish-name">Filet Mignon al Barolo</span>
+                                <span class="dish-price">$55</span>
+                            </div>
+                            <p class="dish-desc">Medallón de res bañado en reducción de vino Barolo, acompañado de puré de patatas trufado.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://granjamagdalena.cl/cdn/shop/articles/langosta-thermidor-480371.jpg?v=1610337991" alt="Langosta Thermidor" class="dish-img">
+                        <div class="dish-content">
+                            <div class="dish-info">
+                                <span class="dish-name">Langosta Thermidor</span>
+                                <span class="dish-price">$65</span>
+                            </div>
+                            <p class="dish-desc">Carne de langosta gratinada con salsa cremosa de mostaza y yemas de huevo.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://content-cocina.lecturas.com/medio/2021/10/19/risotto-de-boletus-con-trufa_c4844e44_1200x1200.jpg" alt="Risotto de Trufa Negra" class="dish-img">
+                        <div class="dish-content">
+                            <div class="dish-info">
+                                <span class="dish-name">Risotto de Trufa Negra y Setas</span>
+                                <span class="dish-price">$42</span>
+                            </div>
+                            <p class="dish-desc">Arroz carnaroli envejecido, boletus edulis y láminas de trufa negra fresca.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://www.gallinablanca.es/wp-content/uploads/2012/12/1540177609515d1b59bc3fee0d474c7b4beda8e0ab.jpg" alt="Magret de Pato" class="dish-img">
+                        <div class="dish-content">
+                            <div class="dish-info">
+                                <span class="dish-name">Magret de Pato a la Naranja</span>
+                                <span class="dish-price">$48</span>
+                            </div>
+                            <p class="dish-desc">Pechuga de pato sellada, salsa cítrica de Grand Marnier y zanahorias glaseadas.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvYG1d1dAOwKaLOQ3Tayin82IyKGA1fTAW1ZUcaxU7dzhnaHpmqt965MY&s=10" alt="Solomillo Wellington" class="dish-img">
+                        <div class="dish-content">
+                            <div class="dish-info">
+                                <span class="dish-name">Solomillo Wellington</span>
+                                <span class="dish-price">$58</span>
+                            </div>
+                            <p class="dish-desc">Centro de solomillo envuelto en duxelles de champiñones, jamón ibérico y hojaldre crujiente.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://picsum.photos/seed/dish11/100/100" alt="Rodaballo al Horno" class="dish-img">
+                        <div class="dish-content">
+                            <div class="dish-info">
+                                <span class="dish-name">Rodaballo al Horno con Alcaparras</span>
+                                <span class="dish-price">$50</span>
+                            </div>
+                            <p class="dish-desc">Rodaballo salvaje bañado en mantequilla noisette, alcaparras y limón Meyer.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://picsum.photos/seed/dish12/100/100" alt="Carrilleras de Ternera" class="dish-img">
+                        <div class="dish-content">
+                            <div class="dish-info">
+                                <span class="dish-name">Carrilleras de Ternera Estofadas</span>
+                                <span class="dish-price">$45</span>
+                            </div>
+                            <p class="dish-desc">Cocinadas a baja temperatura durante 24 horas, sobre polenta cremosa.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://picsum.photos/seed/dish13/100/100" alt="Lubina Salvaje" class="dish-img">
+                        <div class="dish-content">
+                            <div class="dish-info">
+                                <span class="dish-name">Lubina Salvaje a la Sal</span>
+                                <span class="dish-price">$52</span>
+                            </div>
+                            <p class="dish-desc">Horneada en costra de sal marina, servida con espárragos trigueros a la parrilla.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://picsum.photos/seed/dish14/100/100" alt="Costillar de Cordero" class="dish-img">
+                        <div class="dish-content">
+                            <div class="dish-info">
+                                <span class="dish-name">Costillar de Cordero Lechal</span>
+                                <span class="dish-price">$54</span>
+                            </div>
+                            <p class="dish-desc">Costillar asado en su jugo con costra de finas hierbas provenzales.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://picsum.photos/seed/dish15/100/100" alt="Raviolis de Faisán" class="dish-img">
+                        <div class="dish-content">
+                            <div class="dish-info">
+                                <span class="dish-name">Raviolis de Faisán y Foie</span>
+                                <span class="dish-price">$40</span>
+                            </div>
+                            <p class="dish-desc">Pasta fresca hecha en casa, rellena de faisán confitado, bañada en mantequilla de salvia.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="menu-section">
+                <h2>Postres & Dulces</h2>
+                <ul class="dish-list">
+                    <li>
+                        <img src="https://picsum.photos/seed/dish16/100/100" alt="Crème Brûlée" class="dish-img">
+                        <div class="dish-content">
+                            <div class="dish-info">
+                                <span class="dish-name">Crème Brûlée de Vainilla de Tahití</span>
+                                <span class="dish-price">$16</span>
+                            </div>
+                            <p class="dish-desc">Crema pastelera tradicional con una delicada costra de azúcar caramelizada.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://picsum.photos/seed/dish17/100/100" alt="Soufflé de Chocolate" class="dish-img">
+                        <div class="dish-content">
+                            <div class="dish-info">
+                                <span class="dish-name">Soufflé de Chocolate Valrhona</span>
+                                <span class="dish-price">$20</span>
+                            </div>
+                            <p class="dish-desc">Soufflé recién horneado con centro líquido, acompañado de helado de vainilla artesanal.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://picsum.photos/seed/dish18/100/100" alt="Tiramisú" class="dish-img">
+                        <div class="dish-content">
+                            <div class="dish-info">
+                                <span class="dish-name">Tiramisú Clásico de Luigi</span>
+                                <span class="dish-price">$18</span>
+                            </div>
+                            <p class="dish-desc">Bizcochos savoiardi empapados en café espresso y mascarpone batido al Amaretto.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://picsum.photos/seed/dish19/100/100" alt="Tarte Tatin" class="dish-img">
+                        <div class="dish-content">
+                            <div class="dish-info">
+                                <span class="dish-name">Tarte Tatin de Manzana</span>
+                                <span class="dish-price">$16</span>
+                            </div>
+                            <p class="dish-desc">Tarta invertida de manzanas caramelizadas, servida caliente con crema fresca.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://picsum.photos/seed/dish20/100/100" alt="Panna Cotta" class="dish-img">
+                        <div class="dish-content">
+                            <div class="dish-info">
+                                <span class="dish-name">Panna Cotta de Azafrán</span>
+                                <span class="dish-price">$15</span>
+                            </div>
+                            <p class="dish-desc">Postre de nata infusionada con azafrán, servido con coulis de frutos rojos del bosque.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
     </div>
-    <div class="menu-item">
-        <h2>Ensalada de la Casa, creo que trae:</h2>
-        <p>no se que, algo mas, no me acuerdo el nombre y un aderezo que no sabemos qué es.</p>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbg5L6POQxqWjortexvTy-dq2UFr5ircxKLLvfO-FRe_wlLpQF86kwM5Y&s=10" width="300" height="250">
-        <p class="precio">$20.000</p>
-    </div>
-</main>
-<footer>
-<p>&copy; 2026 Mi Proyecto de HTML- Clase OC</p>
-    <a href="index.html">
-        <button type="submit">Volver al index</button>
-    </a>
-</footer>
-   
 </body>
 </html>

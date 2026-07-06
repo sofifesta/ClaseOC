@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4efeb;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #2c2c2c;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+.menu-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 60px 50px;
+    border: 2px solid #5a3c3c;
+    outline: 4px double #5a3c3c;
+    outline-offset: -12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.menu-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.menu-header h1 {
+    font-size: 3.5rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #5a3c3c;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #666;
+    letter-spacing: 2px;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: #5a3c3c;
+    margin: 30px auto;
+    width: 60%;
+    position: relative;
+}
+
+.divider::after {
+    content: "♦";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    padding: 0 15px;
+    color: #5a3c3c;
+    font-size: 1.2rem;
+}
+
+.menu-section {
+    margin-bottom: 50px;
+}
+
+.menu-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #5a3c3c;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e0d8d0;
+    padding-bottom: 10px;
+}
+
+.dish-list {
+    list-style: none;
+}
+
+.dish-list li {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.dish-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid #e0d8d0;
+    flex-shrink: 0;
+}
+
+.dish-content {
+    flex-grow: 1;
+}
+
+.dish-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.dish-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+.dish-info::after {
+    content: "........................................................................................";
+    overflow: hidden;
+    color: #ccc;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-grow: 1;
+    font-weight: normal;
+}
+
+.dish-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #5a3c3c;
+    order: 3;
+}
+
+.dish-desc {
+    font-size: 1rem;
+    font-style: italic;
+    color: #666;
+    max-width: 90%;
+}
+
+@media (max-width: 600px) {
+    .menu-container {
+        padding: 40px 20px;
+    }
+    
+    .menu-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .dish-list li {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .dish-info::after {
+        display: none;
+    }
+    
+    .dish-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .dish-price {
+        margin-top: 5px;
+    }
+
+    .dish-desc {
+        max-width: 100%;
+        text-align: center;
+    }
+}

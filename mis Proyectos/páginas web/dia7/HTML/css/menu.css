@@ -37,6 +37,11 @@ body {
     margin-bottom: 10px;
 }
 
+header img {
+    max-height: 50px;
+    width: auto;
+}
+
 .subtitle {
     font-size: 1.2rem;
     font-style: italic;
@@ -80,6 +85,45 @@ body {
     padding-bottom: 10px;
 }
 
+footer {
+    padding: 2.5rem;
+    text-align: center;
+    background: rgba(177, 141, 117, 0);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: auto;
+}
+
+footer p {
+    color: #64748b;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.btn-back, footer button {
+    background: transparent;
+    color: #9e9670;
+    border: 2px solid #9e9269;
+    padding: 0.75rem 2.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.1);
+}
+
+.btn-back:hover, footer button:hover {
+    background: #ccaf52ec;
+    color: #d38724c0;
+    box-shadow: 0 0 25px rgba(196, 192, 188, 0.5);
+    transform: scale(1.05);
+}
 .dish-list {
     list-style: none;
 }
@@ -118,7 +162,7 @@ body {
 }
 
 .dish-info::after {
-    content: "........................................................................................";
+    content: "";
     overflow: hidden;
     color: #ccc;
     margin-left: 10px;

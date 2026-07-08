@@ -104,6 +104,20 @@ ul li a:hover {
         padding: 1rem;
         font-size: 0.95rem;
     }
+    header h1 {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #4d93ee;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(47, 62, 204, 0.959);
+}
+header img {
+    max-height: 50px;
+    width: auto;
+    filter: drop-shadow(0 0 8px rgba(41, 69, 226, 0.87));
+}
+
 }
 
 footer {

@@ -1,118 +1,150 @@
+/* =========================================
+   Variables Base y Reset
+   ========================================= */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
+/* Usamos html para el fondo crema de la pantalla */
+html {
+    background-color: #f4efeb; /*  */
+    height: 100%;
+}
+
+/* Transformamos el body en el contenedor formal elegante */
 body {
-    background-color: #F5F5DC;
-    color: #333333;
+    background-color: #ffffff; /* [cite: 22] */
+    font-family: 'Georgia', 'Times New Roman', serif; /*  */
+    color: #2c2c2c; /*  */
+    line-height: 1.6; /*  */
+    
+    /* Diseño ancho (95%) para que el logo vaya bien a la izquierda */
+    max-width: 95%; /* [cite: 53] */
+    margin: 20px auto;
+    padding: 40px 30px; /* [cite: 53] */
+    
+    /* Bordes y contornos decorativos estilo menú */
+    border: 2px solid #5a3c3c; /* [cite: 23] */
+    outline: 4px double #5a3c3c; /* [cite: 23] */
+    outline-offset: -12px; /* [cite: 23] */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* [cite: 24] */
+    
+    /* Estructura flexible para empujar el footer abajo */
     display: flex;
     flex-direction: column;
+    min-height: calc(100vh - 40px);
+}
+
+/* =========================================
+   Header (Logo a la izq y Título centrado)
+   ========================================= */
+header {
+    display: flex;
     align-items: center;
-    padding: 40px 20px;
-    min-height: 100vh;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 40px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0d8d0; /* Línea divisoria sutil */
 }
 
-.header-principal {
+header h1 {
+    font-size: 2.8rem;
+    font-weight: normal;
+    text-transform: uppercase; /* [cite: 25] */
+    letter-spacing: 4px; /* [cite: 25] */
+    color: #5a3c3c; /* [cite: 25] */
     text-align: center;
-    margin-bottom: 35px;
 }
 
-.header-principal img {
-    max-width: 110px;
-    margin-bottom: 10px;
+header img {
+    position: absolute;
+    left: 0; /* Pegado completamente al borde izquierdo interno del cuadro */ /* [cite: 55] */
+    max-height: 60px;
+    width: auto;
 }
 
-.header-principal h1 {
-    color: #1A365D;
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+/* =========================================
+   Sección Principal (Grilla de Videos)
+   ========================================= */
+main {
+    display: grid;
+    /* Se ponen uno al lado del otro en PC, y uno abajo del otro en celular */
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
-.contenedor-tutorial {
-    background-color: #FFFFFF;
+/* Estilo formal para los reproductores de YouTube */
+iframe {
     width: 100%;
-    max-width: 650px;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.06);
+    aspect-ratio: 16 / 9; /* Mantiene la proporción de video perfecta y responsiva */
+    border: 2px solid #5a3c3c;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
 }
 
-.contenedor-tutorial h2 {
-    color: #1A365D;
-    font-size: 26px;
-    margin-bottom: 12px;
-    border-bottom: 2px solid #F5F5DC;
-    padding-bottom: 10px;
-}
-
-.descripcion {
-    color: #666666;
-    font-size: 16px;
-    margin-bottom: 25px;
-    line-height: 1.5;
-}
-
-.lista-pasos {
-    padding-left: 20px;
-}
-
-.lista-pasos li {
-    margin-bottom: 20px;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #2D3748;
-    padding-left: 5px;
-}
-
-.lista-pasos strong {
-    color: #1A365D;
-}
-
-.img-inline {
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    object-fit: cover;
-    max-width: 100%;
-}
-
+/* =========================================
+   Footer y Botón de Retorno
+   ========================================= */
 footer {
-    margin-top: 40px;
+    padding: 2rem 0 1rem 0;
     text-align: center;
-    width: 100%;
-    max-width: 650px;
-}
-
-footer p {
-    color: #718096;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-.acciones {
+    margin-top: auto; /* Empuja el footer al fondo de la página */
     display: flex;
     justify-content: center;
 }
 
-.btn-secundario {
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: #1A365D;
-    color: #FFFFFF;
+footer a {
     text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 6px rgba(26, 54, 93, 0.2);
 }
 
-.btn-secundario:hover {
-    background-color: #2A4365;
-    transform: translateY(-1px);
+footer button {
+    background: transparent; /* [cite: 33] */
+    color: #9e9269; /* [cite: 33] */
+    border: 2px solid #9e9269; /* [cite: 33] */
+    padding: 0.75rem 2.5rem; /* [cite: 33] */
+    font-size: 0.95rem; /* [cite: 33] */
+    font-weight: 600; /* [cite: 33] */
+    border-radius: 50px; /* [cite: 33] */
+    cursor: pointer; /* [cite: 34] */
+    text-transform: uppercase; /* [cite: 34] */
+    letter-spacing: 2px; /* [cite: 34] */
+    transition: all 0.3s ease; /* [cite: 34] */
+    box-shadow: 0 0 15px rgba(158, 146, 105, 0.1);
+}
+
+footer button:hover {
+    background: #ccaf52; /* [cite: 35] */
+    color: #ffffff;
+    box-shadow: 0 0 25px rgba(204, 175, 82, 0.4);
+    transform: scale(1.05); /* [cite: 35] */
+    border-color: #ccaf52;
+}
+
+/* =========================================
+   Responsividad (Pantallas Chicas)
+   ========================================= */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column-reverse; /* El logo se acomoda arriba del título en celulares */
+        gap: 20px;
+    }
+    
+    header img {
+        position: relative;
+        left: 0;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    main {
+        grid-template-columns: 1fr; /* Columna única para los videos */
+        gap: 25px;
+    }
 }
